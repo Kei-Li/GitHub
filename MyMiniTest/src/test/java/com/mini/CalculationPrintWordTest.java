@@ -1,5 +1,4 @@
-package com.test;
-
+package com.mini;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -10,10 +9,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-import com.minitest.Calculation;  
 @RunWith(Parameterized.class)  
-
-public class CalculationNewPrintWordTest {  
+public class CalculationPrintWordTest {  
   
     private int input;  
     private String expected;  
@@ -24,22 +21,21 @@ public class CalculationNewPrintWordTest {
         		{1,"1"},
         		{3,"Fizz"},
         		{5,"Buzz"},
-        		{13,"Fizz"},
-        		{15,"FizzBuzz"},
-        		{52,"Buzz"},
-        		{53,"FizzBuzz"},
+        		{15,"FizzBuzz"}
+        		
         };  
         return Arrays.asList(object);  
     }  
-      
-    public CalculationNewPrintWordTest(int input, String expected){  
+    
+    public CalculationPrintWordTest(int input, String expected){  
         this.input = input;  
         this.expected = expected;  
     }  
+    
     @Test  
-    public void testNewPrintWord(){  
+    public void testPrintWord(){  
     	Calculation cl = new Calculation();  
-        String result = cl.newPrintWord(input); 
+        String result = cl.printWord(input); 
         Assert.assertEquals(expected,result);  
-    }
+    }  
 }

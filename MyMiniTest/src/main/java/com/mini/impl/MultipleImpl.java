@@ -1,6 +1,6 @@
-package com.minitest.impl;
+package com.mini.impl;
 
-import com.minitest.Multiple;
+import com.mini.Multiple;
 
 public class MultipleImpl implements Multiple{
 

@@ -1,7 +1,7 @@
-package com.minitest;
+package com.mini;
 
-import com.minitest.impl.MultipleImpl;
-import com.minitest.impl.NewMultipleImpl;
+import com.mini.impl.MultipleImpl;
+import com.mini.impl.NewMultipleImpl;
 
 public class Calculation {
 	public String printWord (int num) {
